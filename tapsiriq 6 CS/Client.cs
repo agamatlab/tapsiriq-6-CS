@@ -1,11 +1,12 @@
 ﻿class Client
 {
     public Client() {}
-    public Client(string name, string surname, CreditCard card)
+    public Client(string name, string surname, CreditCard card, Message[] log)
     {
         Name = name;
         Surname = surname;
         Card = card;
+        Log = log;
     }
 
     public string Name { get; set; } = string.Empty;
